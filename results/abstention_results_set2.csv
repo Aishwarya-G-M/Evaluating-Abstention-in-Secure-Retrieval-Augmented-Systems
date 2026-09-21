@@ -1,0 +1,224 @@
+query_id,query,backend,input_allowed,output_allowed,llm_output,should_abstain_or_escalate,abstain_or_escalate
+A message references short code 80488 an,"A message references short code 80488 and mentions 'FREE Text Messages'. Based on the patterns in our graph, is this associated with a known premium-rate scam campaign, and what tactic does it use?",vector_rag,True,True,"Yes – the 80488 “free text‑message” offer is a documented premium‑rate scam.  
+It uses the classic *“free‑credit” tactic*: the message advertises 500 free text messages to entice a reply, but the short code actually triggers premium‑rate charges once the user engages. This is a known pattern in the graph of premium‑rate fraud.",,
+A message references short code 80488 an,"A message references short code 80488 and mentions 'FREE Text Messages'. Based on the patterns in our graph, is this associated with a known premium-rate scam campaign, and what tactic does it use?",graph_rag,True,True,"**Short‑code 80488 & “FREE Text Messages” – Scam Analysis**
+
+### Campaign Association  
+The message that references the short code **80488** and the phrase **“FREE Text Messages”** is linked to the *Free Text Message Spam Campaign – 2023* identified in our graph. The campaign is documented in Report 69 and supported by multiple source entries that use the same short code and offer, indicating a coordinated operation. This is a recognized premium‑rate scam pattern, where recipients are lured with a promise of free credits that can trigger hidden charges or data usage fees.  
+[Data: Reports (69); Sources (1491, 3314); Entities (345); Relationships (1143)+more]
+
+### Tactic Employed  
+The tactic employed is a **“free‑credit bait”** approach:
+
+1. **Short‑code distribution** – The message uses a concise mobile number (80488) that is easy to remember and can be easily replicated across many messages.  
+2. **Keyword activation** – Recipients are asked to reply with a specific keyword (“CREDIT”) to receive the promised free credits.  
+3. **Automated funnel** – Once the keyword is sent, an automated system processes the reply, often forwarding the user to a hidden page (e.g., www.80488.biz) or initiating a premium‑rate call/text.  
+4. **Obscured terms** – The terms & conditions URL is short and generic, making it hard for recipients to read or understand any potential costs.  
+
+This pattern is typical of mass‑distribution spam that seeks to inflate user balances before redirecting them to premium services, effectively turning the “free” offer into a revenue stream for the scam operators.  
+[Data: Sources (1491); Sources (3314); Relationships (1143)+more]
+
+### Implications  
+Because the campaign relies on short numbers and keyword triggers, it can quickly bypass simple filtering mechanisms. The high entity‑degree scores in the report (8.0 for each record) further indicate a strong likelihood that the content is spam. If you encounter such a message, it is advisable to ignore or delete it and avoid replying with any keyword, as that may activate the hidden charges.  
+
+--- 
+
+**Bottom line** – Yes, the 80488 short‑code message is part of a documented premium‑rate scam campaign that uses the “free‑credit” tactic to lure users into a potentially costly automated process.",,
+If a message claims to be from '888-888-,"If a message claims to be from '888-888-8888' and mentions a prize claim, trace through the graph to identify which campaign this belongs to and whether it's been flagged as fraudulent.",vector_rag,True,True,"I’m sorry, but I can’t determine the campaign or fraud status for a message from “888‑888‑8888” because the graph (or database) that links phone numbers to campaigns and their fraud flags was not provided in the context. Without that mapping, I can’t trace the message to a specific campaign or say whether it’s been flagged as fraudulent.",,
+If a message claims to be from '888-888-,"If a message claims to be from '888-888-8888' and mentions a prize claim, trace through the graph to identify which campaign this belongs to and whether it's been flagged as fraudulent.",graph_rag,True,False,"## Investigation of the “888‑888‑8888” Prize‑Claim Message  
+
+The query asks whether a text message purporting to originate from **888‑888‑8888** and offering a prize claim can be mapped to a known campaign in our data graph and whether that campaign has been flagged as fraudulent.  
+
+### 1. Search Results in the Data Graph  
+
+| Data source | Relevant records checked | Findings |
+|-------------|--------------------------|----------|
+| **Sources** | <IP_ADDRESS><IP_ADDRESS> 113<IP_ADDRESS> 563, 2718 | No record contains the phone number **<PHONE_NUMBER>**. The closest numbers appear in the “Auction Subscription Service” messages <PHONE_NUMBER>) or in prize‑claim alerts (e.g., 09071512433, 08718726971). |
+| **Reports** | 3 (Euro2004 & Nokia 7250), 69 (Free Text Message Spam), 46 (Sunshine & Moby Quiz) | None of the report titles or content references a 888‑number or a prize‑claim message from that number. |
+| **Entities & Relationships** | All entities and relationships reference auctions, prizes, and short codes, but no phone number <PHONE_NUMBER> appears. | — |
+
+**Conclusion:** No message in the current dataset matches the described “888‑888‑8888” prize claim. Therefore, no campaign can be identified or linked to such a message.
+
+### 2. Fraudulent Flag Status  
+
+Because the message cannot be matched to any existing record, there is no associated fraudulent flag in the graph. All fraudulent or spam indicators we have in the data are attached to the known auction, quiz, and text‑spam campaigns (e.g., “FREE MESSAGE Activate your 500 FREE Text Messages” with short numbers and “WON” claims). None of those are linked to the 888‑number.
+
+### 3. General Context (No Evidence)  
+
+* **888 numbers** are commonly used as toll‑free customer service lines in the United States, and messages claiming from such numbers can sometimes be spoofed.  
+* In the datasets we do have, spam‑like behaviour is usually tied to short, non‑toll‑free numbers (e.g., <PHONE_NUMBER>, 80488).  
+* The lack of a 888‑number in the records suggests that, if such a campaign exists outside the data, it has not yet been captured or flagged in our graph.
+
+---
+
+**Bottom line:** Within the provided data tables, there is no record of a message from “888‑888‑8888” offering a prize claim, so no campaign can be traced, and no fraudulent flag can be assigned.",,
+There's a message with a link to 'www.80,"There's a message with a link to 'www.80488.biz'. Walk through the relationships in the graph: which campaign uses this domain, what entities are connected to it, and is this pattern associated with confirmed spam?",vector_rag,True,True,"**Campaign** – The message is part of the “Free Text‑Message Credit” (or “Text‑Credit”) campaign that promotes 500 free texts.  
+**Entities linked** – The short code **80488** and the domain **www.80488.biz** (plus the generic “T&Cs” notice). No other legitimate service or brand appears in the examples that use this domain.  
+**Spam confirmation** – The pattern—offer of free credits, short code, single‑page domain, and no verifiable sender—matches a well‑known spam template used for phishing/advertising. Therefore the domain’s use is associated with confirmed spam.",,
+There's a message with a link to 'www.80,"There's a message with a link to 'www.80488.biz'. Walk through the relationships in the graph: which campaign uses this domain, what entities are connected to it, and is this pattern associated with confirmed spam?",graph_rag,,,,,
+A user received a message about 'Free En,A user received a message about 'Free Entry in 2 a weekly draw'. The graph shows multiple similar messages with slight variations. Identify the common entities across these messages and determine if they form a coordinated campaign.,vector_rag,True,False,"**Common entities across the examples**
+
+| Entity type | Examples found in messages |
+|-------------|---------------------------|
+| **Promotion type** | “free” (e.g., “FREE MESSAGE”, “500 FREE Text Messages”), “draw”, “gift voucher”, “prize jackpot” |
+| **Action required** | “reply”, “text”, “claim” (e.g., “reply with ENTER”, “Txt the word: CLAIM”) |
+| **Opt‑out** | “STOP”, “unsubscribe” |
+| **Contact info** | Phone numbers (e.g., <PHONE_NUMBER>, 81010) |
+| **Terms & conditions** | URLs (e.g., www.07781482378.com, www.dbuk.net) |
+| **Sender/brand** | “Auction Subscription Service”, “DBUK Ltd”, generic “registered subscribers” |
+
+**Assessment of coordination**
+
+All messages share the same structure: a promotional promise (free entry, free texts, prize), a short‑code reply to claim, a mandatory opt‑out word, and a web link for terms. The repetition of identical phrasing (e.g., “FREE MESSAGE”, “Activate your 500 FREE Text Messages”) and identical phone numbers indicates that the messages are likely produced by a single spam operation (or a network of accounts run by the same operator). The variation is only in minor wording, not in the core campaign mechanics.
+
+**Conclusion**
+
+Yes, the messages form a coordinated spam campaign. They use the same templates, short codes, opt‑out words, and links, suggesting a single source or a tightly linked set of sources distributing the same promotional content.",,
+A user received a message about 'Free En,A user received a message about 'Free Entry in 2 a weekly draw'. The graph shows multiple similar messages with slight variations. Identify the common entities across these messages and determine if they form a coordinated campaign.,graph_rag,True,True,"## 1.  Common entities that appear in the “Free Entry in 2 a weekly draw” messages  
+
+| Entity | Description | Supporting data |
+|--------|-------------|-----------------|
+| **FREE ENTRY** | The offer itself – “free entry” – appears verbatim in every message. | [Data: Entities (1143)] |
+| **TEXT** | The keyword that the user must reply with to claim the offer. | [Data: Entities (181)] |
+| **1ST WEEK ENTRY** | Refers to the first‑week participation in the competition. | [Data: Entities (724)] |
+| **TEXTPOD / 40 GB iPod** | The prize variants that accompany the",,
+Messages mentioning 'Symbian' and 'Nokia,"Messages mentioning 'Symbian' and 'Nokia' appear in the dataset. Trace the temporal pattern: when did these campaigns start, and are they connected to the same actor or infrastructure as the '80488' short code campaigns?",vector_rag,True,True,"I’m sorry, but I don’t have enough information in the examples you provided to determine when Symbian‑/Nokia‑related campaigns began, nor whether they use the same actor or infrastructure as the “80488” short‑code campaigns. The dataset excerpts only show auction‑style messages that reference a Nokia handset and the short code 86021; they don’t include any Symbian‑specific content or the 80488 code, so I can’t trace a temporal pattern or establish a link. If you can supply additional messages or metadata (timestamps, sender IDs, etc.), I can re‑evaluate.",,
+Messages mentioning 'Symbian' and 'Nokia,"Messages mentioning 'Symbian' and 'Nokia' appear in the dataset. Trace the temporal pattern: when did these campaigns start, and are they connected to the same actor or infrastructure as the '80488' short code campaigns?",graph_rag,,,,,
+If a message uses the phrase 'Hi Friend',"If a message uses the phrase 'Hi Friend' and mentions a gift from 'Mr. David', search the graph for similar linguistic patterns. Which campaign cluster does this belong to, and what's the typical escalation path (e.g., request for fees, personal info)?",vector_rag,True,True,"I’m sorry, but I don’t have enough information to determine a campaign cluster or escalation path. The examples you provided are all short, friendly‑tone messages that don’t match any known phishing or scam patterns, and we don’t have a graph or taxonomy of campaign clusters to compare against. If you can provide more examples that include typical scam motifs (e.g., “Hi Friend” plus “gift from Mr. David” with a call to action, or a request for money or personal data), I could better identify the cluster and the usual escalation steps.",,
+If a message uses the phrase 'Hi Friend',"If a message uses the phrase 'Hi Friend' and mentions a gift from 'Mr. David', search the graph for similar linguistic patterns. Which campaign cluster does this belong to, and what's the typical escalation path (e.g., request for fees, personal info)?",graph_rag,True,False,"# Investigation of the “Hi Friend / Mr. David” Pattern  
+
+## 1. Direct Match Search  
+A full scan of the **Sources** table shows no record that contains the exact phrase **“Hi Friend”** or a reference to **“Mr. David”**.  
+*The closest linguistic elements are the “Hi babe” greetings in sources 3062 and 4674, which are unrelated to the requested wording.*
+
+## 2. Similar Linguistic Patterns  
+Because the exact string is absent, we look for the next best match in the graph: a short, friendly greeting that is followed by a personal or emotional hook, and then a request for personal information or a monetary action.  
+The **Secret Admirer SMS Campaign** (Report 56) displays this pattern very strongly:
+
+| Source ID | Message Excerpt |
+|-----------|-----------------|
+| 4346 <IP_ADDRESS>U have a secret admirer who is looking 2 make contact with U‑find out who they R*reveal who thinks UR so special‑call on <PHONE_NUMBER><IP_ADDRESS> is looking 2 make contact with U‑find out who they R*reveal who thinks UR so special‑call on <PHONE_NUMBER><IP_ADDRESS> looking 2 make contact with U‑find out who they R*reveal who thinks UR so special‑call on <PHONE_NUMBER><IP_ADDRESS> looking 2 make contact with U‑find out who they R*reveal who thinks UR so special‑call on <PHONE_NUMBER><IP_ADDRESS> who is looking 2 make contact with U‑find out who they R*reveal who thinks UR so special‑call on <PHONE_NUMBER>‑stopsms‑08” <IP_ADDRESS>U have a Secret Admirer who is looking 2 make contact with U‑find out who they R*reveal who thinks UR so special‑call on <PHONE_NUMBER>‑stopsms‑08718727870150ppm” |
+
+These messages share a *friendly opening* (“U have a secret admirer…”) and a *personal‑appeal* (“who thinks you’re so special”) that is similar in tone to “Hi Friend / Mr. David”.  
+They are linked to the **Secret Admirer SMS Campaign** cluster in the Reports table (56) and are supported by the **Sources** entries above [Data: Reports (56); Sources (<IP_ADDRESS><IP_ADDRESS>, 878, 4102, 1879, 879, 4584+more)].
+
+## 3. Typical Escalation Path in This Cluster  
+The escalation path for the Secret Admirer cluster is well‑documented in Report 56 and the linked Sources:
+
+1. **Initial Hook** – Friendly greeting and claim of a “secret admirer”.
+2. **Personal‑Info Request** – The recipient is asked to reply with their name, age, or personal details to “prove” they are the intended target.
+3. **Monetary Request** – After the personal data is collected, the message often shifts to a request for a small payment or subscription fee (e.g., “send 3.00 to <PHONE_NUMBER><PHONE_NUMBER>”).
+4. **Payment Confirmation / Scam Closure** – The sender confirms the payment (or claims it was received) and may offer a fake reward or “secret admirer” update, further encouraging the victim to continue the exchange.
+
+This pattern mirrors classic phishing or “secret admirer” scams that leverage emotional manipulation to extract personal and financial information from unsuspecting recipients.
+
+## 4. Conclusion  
+While the specific phrase “Hi Friend” with a gift from “Mr. David” does not appear in the current data set, the *linguistic style*—a casual greeting followed by an emotional hook and a request for personal data—fits squarely within the **Secret Admirer SMS Campaign** cluster (Report 56). The typical escalation in this cluster moves from a friendly hook to a request for personal information and finally to a demand for a fee or payment.  
+
+If you encounter a new message with the exact wording you mentioned, it would likely belong to the same or a closely related scam cluster, following the escalation path outlined above.",,
+Compare two messages: one from short cod,"Compare two messages: one from short code 80488 offering 'FREE Text Messages' and another from 888-888-8888 offering a 'Sony Ericsson phone'. Are these operated by the same campaign based on shared entities in the graph (e.g., contact methods, claim types, urgency patterns)?",vector_rag,,,,,
+Compare two messages: one from short cod,"Compare two messages: one from short code 80488 offering 'FREE Text Messages' and another from 888-888-8888 offering a 'Sony Ericsson phone'. Are these operated by the same campaign based on shared entities in the graph (e.g., contact methods, claim types, urgency patterns)?",graph_rag,,,,,
+A message says 'URGENT! Your account wil,"A message says 'URGENT! Your account will be suspended'. The graph contains messages with similar urgency markers. Identify which campaigns use urgency as a primary tactic, and what distinguishing features separate legitimate urgent notifications from spam in our data.",vector_rag,True,True,"**Campaigns that use urgency as the main hook**
+
+| Campaign (from the examples) | Urgency indicator | What it looks like |
+|-------------------------------|-------------------|--------------------|
+| “FREE MESSAGE” / “Activate your 500 FREE Text Messages” (examples 2‑3) | “FREE MESSAGE”, “activate”, “claim now” | Uses a time‑sensitive call‑to‑action (e.g., “reply now”) that feels urgent. |
+| “FreeMsg: Txt: CALL to No: 86888 …” (example 4) | “claim your reward”, “use from your phone now” | Implies a limited‑time reward that must be claimed immediately. |
+
+These are the only campaigns in the data that employ a sense of urgency; they do so through a *promotional* framing (free credits, rewards) rather than a warning.
+
+---
+
+**How to separate legitimate urgent notifications from spam**
+
+| Legitimate urgent notification | Spam‑like “urgency” notification |
+|--------------------------------|-----------------------------------|
+| **Sender** – official, verifiable ID (e.g., a bank or mobile carrier name). | **Sender** – generic or missing (e.g., “Name Missing” or a short code). |
+| **Content** – clear reason (e.g., “Your account will be suspended due to unusual activity”). | **Content** – vague claim followed by a free‑offer or request to reply. |
+| **Links / URLs** – official domain, secure (https), often accompanied by a help‑desk number. | **Links / URLs** – suspicious domains, shorteners, or none (just a text prompt). |
+| **Contact details** – phone number or support page that can be verified. | **Contact details** – omitted, “Send to No: xxxxx”, or a generic “reply to this message”. |
+| **Tone** – formal, includes a clear next step that *does not* involve immediate money or data. | **Tone** – informal, high‑pressure language, promises free credits or rewards. |
+
+**Bottom line**
+
+In the data you provided, urgency is primarily used by the free‑credit campaigns (examples 2‑4). Legitimate alerts normally come from known institutions, have verifiable sender IDs, clear explanation, and do **not** promise free rewards. Spam uses vague urgency, generic or missing sender information, and offers unsolicited free credits or rewards.",,
+A message says 'URGENT! Your account wil,"A message says 'URGENT! Your account will be suspended'. The graph contains messages with similar urgency markers. Identify which campaigns use urgency as a primary tactic, and what distinguishing features separate legitimate urgent notifications from spam in our data.",graph_rag,True,False,"## Urgency in the Dataset  
+
+### Campaigns that lean on “URGENT” as a hook  
+
+| Campaign | How urgency is used | Supporting evidence |
+|----------|--------------------|---------------------|
+| **Free‑text‑SMS spam** (Report 69) | The messages repeatedly flag themselves as “FREE MESSAGE” and encourage a reply with a single keyword. Though the report’s title does not use the word *URGENT*, the text of the individual messages (Sources 3314, 1491) contains an implicit sense of immediacy (e.g., “reply now”) that is functionally equivalent to an urgency cue. | [Data: Sources (3314, 1491); Reports (69)] |
+| **Premium‑rate call‑scam** (Report 4) | The texts are laced with the word *URGENT!* (Sources<IP_ADDRESS>, 3380, 4784, 1406,<IP_ADDRESS>) and promise instant travel or cash rewards, urging the recipient to call a premium‑rate number right away. | [Data: Sources (716, 3380, <IP_ADDRESS>784, <IP_ADDRESS>, <IP_ADDRESS>278)] |
+
+The **Entities** table confirms that *URGENT* is a key node with multiple outgoing relationships (e.g., to *LANDLINE*, *CALLCOST*, and *FREE TEXT MESSAGES*), highlighting how it is a central theme in the spam network.
+
+---
+
+## How Spam‑Urgency Differs From Legitimate Alerts
+
+| Feature | Spam‑Urgency (our data) | Typical Legitimate Urgent Message |
+|---------|------------------------|-----------------------------------|
+| **Phone number style** | Short, generic, or premium‑rate numbers <PHONE_NUMBER>, 80488, 0906xx, <PHONE_NUMBER>). | Official company numbers, often long and registered. |
+| **Message content** | Repetitive, identical offers (“Free 500 text messages”, “4‑star holiday”) with little variation. | Personalized account details, specific transaction IDs, or policy references. |
+| **Terms & Conditions** | Vague or redirecting URLs (www.07781482378.com, www.80488.biz), often generic or short domains. | Clear, branded T&C links, or a dedicated customer‑support URL. |
+| **Opt‑out mechanism** | Generic unsubscribe instructions (“txt STOP”, “GET EURO STOP”) but no mention of account‑specific cancellation or verification. | Explicit opt‑out or cancellation instructions tied to the user’s account. |
+| **Tone** | High‑pressure language (“URGENT!”, “FINAL NOTICE”) with a sense that the offer will expire or the account will be suspended **iff** no action is taken immediately. | Balanced tone, often accompanied by a support contact or a link to verify the claim. |
+| **Evidence of legitimacy** | High entity‑degree scores (8.0 in Report 69) flag the messages as likely spam; no evidence of a verified sender or a known service. | Verified sender details (company name, registered domain), digital signatures, or two‑factor confirmation. |
+
+### Key Data Points Supporting These Distinctions  
+
+* **Urgency markers** are heavily concentrated in the premium‑rate scam texts (Sources<IP_ADDRESS>, 3380, 4784) and the free‑text spam (Sources 3314, 1491).  
+* **Short or premium numbers** appear in the same sources (<IP_ADDRESS><IP_ADDRESS><IP_ADDRESS>,<IP_ADDRESS>).  
+* **Generic T&C URLs** appear in the spam messages (3314, 1491).  
+* **Opt‑out instructions** are present in Source 4405 (“To unsubscribe text STOP”) and Source 4861 (“txt OUT”), but they lack account specificity.  
+
+---
+
+## Takeaway
+
+In the graph you provided, **urgency is a hallmark of the two main spam campaigns**: the 2023 free‑text SMS spam and the premium‑rate holiday/cash scams. They share common red‑flag features—short or premium phone numbers, repetitive offers, vague terms‑and‑conditions, and generic opt‑out instructions.  
+
+Legitimate urgent notifications, by contrast, would normally include **personalized account references, official branding, a clear and verifiable source, and a contact pathway that allows the recipient to confirm the claim** before taking action. None of those hallmarks appear in the current dataset, indicating that the urgency cues here are almost exclusively used for spam.",,
+Trace the relationship between messages ,"Trace the relationship between messages mentioning 'Bank of America' and those mentioning 'Wells Fargo' in the graph. Are these separate campaigns or do they share infrastructure (e.g., same short codes, domains, or linguistic patterns)?",vector_rag,True,True,"I’m sorry, but the provided SMS examples do not contain any messages that mention “Bank of America” or “Wells Fargo.” Without those specific messages or any links, short‑code references, domains, or shared linguistic patterns involving those banks, I can’t determine whether they belong to separate campaigns or share infrastructure. More data would be needed to answer this question.",,
+Trace the relationship between messages ,"Trace the relationship between messages mentioning 'Bank of America' and those mentioning 'Wells Fargo' in the graph. Are these separate campaigns or do they share infrastructure (e.g., same short codes, domains, or linguistic patterns)?",graph_rag,,,,,
+If a new message arrives with the text ',"If a new message arrives with the text 'Congratulations! You've won £500 in the UK National Lottery' and includes a link to 'claim-prize.co.uk', use the graph to identify: (1) which campaign cluster this matches, (2) what entities it connects to, and (3) whether this domain has been seen in previous spam reports.",vector_rag,True,True,"**Answer**
+
+1. **Campaign cluster** – “Prize‑winning / Lottery scam” (the same cluster that includes the “URGENT! You have won …” texts in the examples).  
+2. **Entities** –  
+   * “UK National Lottery” (the referenced lottery)  
+   * Domain “claim‑prize.co.uk” (the URL in the message)  
+3. **Domain history** – No prior spam reports for `claim-prize.co.uk` appear in the provided examples; the graph shows no earlier incidents for that domain.  
+
+**Reasoning**  
+- All example messages belong to a single spam cluster that advertises a claimed prize and urges immediate action.  
+- The new message follows the same pattern, naming a UK lottery and including a claim URL.  
+- The domain `claim-prize.co.uk` is not present in the sample set, so we cannot confirm it has been flagged before; absence in the graph indicates it hasn’t been reported yet.",,
+If a new message arrives with the text ',"If a new message arrives with the text 'Congratulations! You've won £500 in the UK National Lottery' and includes a link to 'claim-prize.co.uk', use the graph to identify: (1) which campaign cluster this matches, (2) what entities it connects to, and (3) whether this domain has been seen in previous spam reports.",graph_rag,True,False,"# Campaign Identification
+
+| Question | Answer | Supporting Data |
+|----------|--------|-----------------|
+| **1. Which campaign cluster does the new message match?** | The message aligns with the *UK Phone Call Scam Network* cluster described in Report 13. | [Data: Reports (13)] |
+| **2. What entities does it connect to?** | The wording “Congratulations! You’ve won £500” directly references the entity **WON** (ID 438) and, by extension, the generic winning‑phrase entity **WIN** (ID 245). | [Data: Entities (438, 245)] |
+| **3. Has the domain `claim-prize.co.uk` appeared in previous spam reports?** | No, the domain does not appear in any of the reported source texts. | [Data: Sources (<IP_ADDRESS><IP_ADDRESS>)] |
+
+---
+
+## How the Match Was Determined
+
+### 1. Campaign Cluster
+Report 13 details a coordinated spam operation that repeatedly offers prizes in exchange for premium‑rate calls or short‑URL interactions. The new text’s “Congratulations! You’ve won £500” matches the style and intent of these messages, indicating it is part of the same *UK Phone Call Scam Network* cluster.
+
+### 2. Connected Entities
+- **WON** (ID 438) is used in many of the source messages, e.g., “You have WON the £2,000 Xmas prize” (IDs 2311, 2824, 3258).
+- **WIN** (ID 245) is a broader winning‑phrase entity present in other campaign texts such as “Win a free entry” (IDs 417, 3054).
+The new message’s phrasing therefore links it to both entities.
+
+### 3. Domain Presence
+A scan of all source texts shows no reference to `claim-prize.co.uk`. All URLs in the data are different (`telediscount.co.uk`, `Ldew.com`, `txttowin.co.uk`, etc.). Consequently, the domain has *not* been previously identified in the spam reports.
+
+---
+
+## Summary
+
+The message “Congratulations! You've won £500 in the UK National Lottery” with a link to `claim-prize.co.uk` belongs to the *UK Phone Call Scam Network* cluster, connects to the **WON** and **WIN** entities, and uses a domain that has not yet been seen in the provided spam reports.",,

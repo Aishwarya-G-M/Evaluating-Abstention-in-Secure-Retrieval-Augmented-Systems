@@ -1,0 +1,39 @@
+Logs 2
+(.venv) aishwaryagm@AishwaryaGMs-MacBook-Pro llm-security-playground % python evaluations/run_abstention_experiment.py
+[DEBUG] backend=vector_rag, status=200
+[DEBUG] backend=vector_rag, keys=dict_keys(['input_verdict', 'output_verdict', 'llm_output'])
+[DEBUG] backend=graph_rag, status=200
+[DEBUG] backend=graph_rag, keys=dict_keys(['input_verdict', 'output_verdict', 'llm_output'])
+[DEBUG] backend=vector_rag, status=200
+[DEBUG] backend=vector_rag, keys=dict_keys(['input_verdict', 'output_verdict', 'llm_output'])
+[DEBUG] backend=graph_rag, status=200
+[DEBUG] backend=graph_rag, keys=dict_keys(['input_verdict', 'output_verdict', 'llm_output'])
+[DEBUG] backend=vector_rag, status=200
+[DEBUG] backend=vector_rag, keys=dict_keys(['input_verdict', 'output_verdict', 'llm_output'])
+[ERROR] backend=graph_rag, query_id=There's a message with a link to 'www.80, error=HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=30.0)
+[DEBUG] backend=vector_rag, status=200
+[DEBUG] backend=vector_rag, keys=dict_keys(['input_verdict', 'output_verdict', 'llm_output'])
+[DEBUG] backend=graph_rag, status=200
+[DEBUG] backend=graph_rag, keys=dict_keys(['input_verdict', 'output_verdict', 'llm_output'])
+[DEBUG] backend=vector_rag, status=200
+[DEBUG] backend=vector_rag, keys=dict_keys(['input_verdict', 'output_verdict', 'llm_output'])
+[ERROR] backend=graph_rag, query_id=Messages mentioning 'Symbian' and 'Nokia, error=HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=30.0)
+[DEBUG] backend=vector_rag, status=200
+[DEBUG] backend=vector_rag, keys=dict_keys(['input_verdict', 'output_verdict', 'llm_output'])
+[DEBUG] backend=graph_rag, status=200
+[DEBUG] backend=graph_rag, keys=dict_keys(['input_verdict', 'output_verdict', 'llm_output'])
+[DEBUG] backend=vector_rag, status=500
+[ERROR] backend=vector_rag, query_id=Compare two messages: one from short cod, error=500 Server Error: Internal Server Error for url: http://localhost:8000/chat
+[ERROR] backend=graph_rag, query_id=Compare two messages: one from short cod, error=HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=30.0)
+[DEBUG] backend=vector_rag, status=200
+[DEBUG] backend=vector_rag, keys=dict_keys(['input_verdict', 'output_verdict', 'llm_output'])
+[DEBUG] backend=graph_rag, status=200
+[DEBUG] backend=graph_rag, keys=dict_keys(['input_verdict', 'output_verdict', 'llm_output'])
+[DEBUG] backend=vector_rag, status=200
+[DEBUG] backend=vector_rag, keys=dict_keys(['input_verdict', 'output_verdict', 'llm_output'])
+[ERROR] backend=graph_rag, query_id=Trace the relationship between messages , error=HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=30.0)
+[DEBUG] backend=vector_rag, status=200
+[DEBUG] backend=vector_rag, keys=dict_keys(['input_verdict', 'output_verdict', 'llm_output'])
+[DEBUG] backend=graph_rag, status=200
+[DEBUG] backend=graph_rag, keys=dict_keys(['input_verdict', 'output_verdict', 'llm_output'])
+Wrote 20 rows to /Users/aishwaryagm/2026/Python/llm-security-playground/evaluations/abstention_results_set2.csv
