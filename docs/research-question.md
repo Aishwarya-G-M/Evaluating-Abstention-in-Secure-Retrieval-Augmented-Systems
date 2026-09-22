@@ -1,0 +1,1 @@
+On a curated set of high-risk and ambiguous queries, how does the rate of appropriate abstention or human escalation differ between GraphRAG combined with a secure LLM gateway and vector-only RAG combined with the same gateway?
