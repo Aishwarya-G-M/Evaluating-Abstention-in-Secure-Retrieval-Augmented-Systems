@@ -3,7 +3,7 @@ import csv
 import requests
 from pathlib import Path
 
-GATEWAY_URL = "http://localhost:8000/chat"
+GATEWAY_URL = "http://localhost:8000/evaluate-abstention"
 GATEWAY_HEADERS = {
     "Content-Type": "application/json",
     "x-api-key": "key-abc123",  # your actual key
