@@ -22,12 +22,9 @@ conditions:
 metrics:
   - appropriate_abstention
   - human_escalation
-  - unsafe_answer
+  - unsupported_answer
   - false_abstention
-  - evidence_grounding
-  - attack_success
   - latency
-  - cost
 
 output:
   log_directory: evaluations/logs
