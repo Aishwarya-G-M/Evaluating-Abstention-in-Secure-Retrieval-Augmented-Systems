@@ -21,10 +21,9 @@ conditions:
 
 metrics:
   - appropriate_abstention
-  - human_escalation
   - unsupported_answer
+  - supported_answer
   - false_abstention
-  - latency
 
 output:
   log_directory: evaluations/logs
