@@ -1,0 +1,30 @@
+project:
+  name: secure_rag_abstention_evaluation
+  version: "0.1"
+
+gateway:
+  base_url: http://127.0.0.1:8000
+  endpoint: /chat
+  timeout_seconds: 60
+
+queries:
+  file: evaluations/queries/abstention_queries.jsonl
+
+conditions:
+  - name: vector_rag_with_gateway
+    backend: vector_rag
+    gateway_enabled: true
+
+  - name: graphrag_with_gateway
+    backend: graphrag
+    gateway_enabled: true
+
+metrics:
+  - appropriate_abstention
+  - unsupported_answer
+  - supported_answer
+  - false_abstention
+
+output:
+  log_directory: evaluations/logs
+  result_directory: evaluations/results
